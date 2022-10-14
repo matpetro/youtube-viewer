@@ -1,5 +1,10 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  height: 90%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +15,218 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+}
+
+.form--container {
+  margin: auto;
+  margin-top: 15vh;
+  display: flex;
+  justify-content: center;
+}
+
+.input--form {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  padding: 4vw;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+.input--field {
+  width: 300px;
+}
+
+.chat {
+  display: flex;
+  width: 90%;
+  padding: 1rem;
+  justify-content: space-between;
+  height: 60vh;
+  flex-direction: column;
+  border: 2px solid grey;
+}
+.chat .user-name {
+  width: 100%;
+  text-align: start;
+}
+.chat .user-name h2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+.chat .chat-message {
+  height: 70%;
+  display: flex;
+  overflow-y: auto;
+  align-content: flex-start;
+  width: 100%;
+  flex-direction: column;
+}
+.chat .chat-message::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+.chat .chat-message::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #282b34;
+}
+.chat .chat-message::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #585857;
+}
+.chat .chat-message {
+  scrollbar-track-color: #ffac41;
+  scrollbar-face-color: #282b34;
+}
+.chat .chat-message .message {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  max-width: 220px;
+  margin-left: 0px;
+}
+.chat .chat-message .message p {
+  color: #b4b6be;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: #250202;
+  border-radius: 0px 10px 10px 10px;
+  padding: 0.6rem;
+  margin: 0;
+}
+.chat .chat-message .message span {
+  color: #b4b6be;
+  font-size: 0.7rem;
+  padding-left: 0.5rem;
+  font-weight: 200;
+}
+.chat .chat-message .mess-right {
+  display: flex;
+  margin-left: auto;
+  flex-direction: column;
+  padding-right: 0.5rem;
+  margin-right: 0px;
+  max-width: 220px;
+}
+.chat .chat-message .mess-right p {
+  background-color: #0b0472;
+  text-align: end;
+  color: white;
+  border-radius: 10px 0px 10px 10px;
+}
+.chat .chat-message .mess-right span {
+  padding-left: 0rem;
+  width: 100%;
+  padding-right: 0.5rem;
+  text-align: end;
+}
+.chat .send {
+  height: 50px;
+  display: flex;
+  width: 100%;
+}
+.chat .send input {
+  width: 70%;
+  padding-left: 1rem;
+  text-decoration: none;
+  border-radius: 5px 0px 0px 5px;
+  border: 2px solid grey;
+  font-size: 1rem;
+}
+.chat .send input:focus {
+  outline: none;
+}
+.chat .send button {
+  background-color: #0b0472;
+  width: 30%;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.video--queue {
+  display: flex;
+  width: 70%;
+  height: 60vh;
+  flex-direction: column;
+  border: 2px solid grey;
+}
+
+.current--video {
+  padding: 0.7rem;
+  height: 15%;
+  border-bottom: 2px solid grey;
+  text-overflow: ellipsis;
+}
+
+.current--video > p {
+  white-space: wrap;
+  overflow: hidden;
+}
+
+.next--videos {
+  display: flex;
+  overflow-y: auto;
+  height: 70%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.next--videos::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+.next--videos::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #282b34;
+}
+.next--videos::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #585857;
+}
+
+.next--video {
+  padding: 0.7rem;
+  border-bottom: 2px solid grey;
+}
+
+.request {
+  height: 60px;
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+}
+
+.request--input {
+  width: 60%;
+  padding-left: 1rem;
+  text-decoration: none;
+  border-radius: 5px 0px 0px 5px;
+  border: 2px solid grey;
+  font-size: 1rem;
+}
+
+.request--input:focus {
+  outline: none;
+}
+
+.request--button {
+  background-color: #0b0472;
+  width: 20%;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  font-weight: 600;
+  color: white;
 }
